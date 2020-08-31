@@ -6,7 +6,7 @@ body {
 h1 {
     text-align: center;
     margin-top: 55px;
-    
+    font-size: xxx-large;
 }
 
 .calculator {
@@ -28,15 +28,15 @@ h1 {
     width: 80%;
     height: 20%;
     margin-top: 5%;
-    background-color: #f7f7f7;
+    background-color: #dedad6;
     border-radius: 12%;
     border: solid;
     align-items: center;
     justify-content: flex-end;;
     font-size: x-large;
     overflow: hidden;
-    padding-right: 15px;
     border-radius: 5%;
+    padding-right: 15px;
 }
 
 .input-container {
@@ -46,11 +46,11 @@ h1 {
     width: 85%;
     height: 55%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 120px 120px 120px 120px;
     grid-template-rows: auto auto auto auto auto;
     flex-flow: row wrap;
-    padding: 10px;
-    
+    padding: 7px;
+    padding-left: 17px;
 }
 
 .numbers {
@@ -61,8 +61,12 @@ h1 {
     border: none;
 }
 
-.numbers:hover, .operator:hover, #equals:hover, #clear:hover, #backspace:hover, #decimal:hover {
+.numbers:hover, .operator:hover, #clear:hover, #backspace:hover, #decimal:hover {
     scale: 1.07;
+}
+
+#equals:hover {
+    scale: 1.04;
 }
 
 .operator {
@@ -107,5 +111,5 @@ h1 {
 
 footer {
     margin-top: 60px;
-    font-size: small;
+    font-size: medium;
 }
