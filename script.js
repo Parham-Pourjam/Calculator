@@ -4,6 +4,7 @@ const operatorButtons = document.querySelectorAll('.operator');
 const equalButton = document.querySelector('#equals');
 const decimalButton = document.querySelector('#decimal');
 const clearButton = document.querySelector('#clear');
+const backspaceButton = document.querySelector('#backspace');
 let firstNumber;
 let secondNumber;
 let operator;
@@ -123,6 +124,11 @@ function clear() {
     decimalButton.addEventListener('click', inputDecimal);
 }
 
+// remove last input
+function backspace() {
+    output.removeChild(output.lastChild);
+}
+
 numberBtns.forEach(numBtn => {
     numBtn.addEventListener('click', displayNum);
 });
@@ -136,3 +142,5 @@ equalButton.addEventListener('click', calculate);
 decimalButton.addEventListener('click', inputDecimal);
 
 clearButton.addEventListener('click', clear);
+
+backspaceButton.addEventListener('click', backspace);

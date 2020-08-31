@@ -1,69 +1,96 @@
+body {
+    background-image: url(images/math-background-13106.gif);
+    background-size: cover;
+}
+
 .calculator {
     display: flex;
     margin: auto;
-    width: 40em;
-    height: 50em;
-    background-color: cornflowerblue;
-    border-radius: 12%;
+    margin-top: 100px;
+    width: 36em;
+    height: 37em;
+    background-color: #3f64d3;
+    border-radius: 5%;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    border: 1em solid silver;
+    border: 10px solid silver;
 }
 
 .display {
     display: flex;
     width: 80%;
-    height: 26%;
-    margin-top: 10%;
+    height: 20%;
+    margin-top: 5%;
     background-color: #f7f7f7;
-    border-radius: 4%;
-    border: 0.3em solid black;
+    border-radius: 12%;
+    border: solid;
     align-items: center;
     justify-content: flex-end;;
     font-size: x-large;
     overflow: hidden;
     padding-right: 15px;
+    border-radius: 5%;
 }
 
 .input-container {
     padding: 5px;
-    border: solid;
+    border: 3px solid;
+    border-radius: 5%;
     width: 85%;
     height: 55%;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto auto;
     flex-flow: row wrap;
+    padding: 10px;
     
 }
 
 .numbers {
     margin: 5px;
     font-size: large;
+    color: black;
+    background-color: #5d74ba;
+    border: none;
 }
 
 .operator {
     font-size: xx-large;
     margin: 5px;
-    background-color: indigo;
-    color: lightcoral;
+    background-color: #783fd3;
+    color: black;
+    border: none;
 }
 
 #equals {
     grid-column: 2 / -1;
     grid-row: 5/ -1;
-    background-color: red;
+    color: white;
+    background-color: black;
     margin: 5px;
     font-size: xx-large;
+    border: none;
 }
 
 #clear {
     background-color: salmon;
+    margin: 5px;
+    border: none;
+    font-size: large;
 }
 
 #backspace {
     background-color: slategrey;
     font-size: xx-large;
     margin: 5px;
+    color: black;
+    border: none;
+}
+
+#decimal {
+    font-size: xx-large;
+    margin: 5px;
+    border: none;
+    background-color: #5d74ba;
 }
