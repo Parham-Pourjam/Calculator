@@ -65,28 +65,28 @@ function calculate() {
 
 
 function add(num1, num2) {
-    result = (num1 + num2).toFixed(3);
+    result = (num1 + num2).toFixed(2);
     displayResult(result);
     calculationIsDone = true;
     return result;
 }
 
 function subtract(num1, num2) {
-    result = (num1 - num2).toFixed(3);
+    result = (num1 - num2).toFixed(2);
     displayResult(result);
     calculationIsDone = true;
     return result;
 }
 
 function multiply(num1, num2) {
-    result = (num1 * num2).toFixed(3);
+    result = (num1 * num2).toFixed(2);
     displayResult(result);
     calculationIsDone = true;
     return result;
 }
 
 function divide(num1, num2) {
-    num2 === 0 ? result = ("Error, division by 0") : result = (num1 / num2).toFixed(3);
+    num2 === 0 ? result = ("Error, division by 0") : result = (num1 / num2).toFixed(2);
     displayResult(result);
     calculationIsDone = true;
     return result;
@@ -115,7 +115,7 @@ function inputDecimal() {
     decimalButton.removeEventListener('click', inputDecimal);
 }
 
-// clear all previous inputs and display outputs
+// clear current display and reset all values for calculations
 function clear() {
     firstNumber = null;
     secondNumber = null;

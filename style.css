@@ -3,6 +3,12 @@ body {
     background-size: cover;
 }
 
+h1 {
+    text-align: center;
+    margin-top: 55px;
+    
+}
+
 .calculator {
     display: flex;
     margin: auto;
@@ -14,7 +20,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    border: 10px solid silver;
+    border: 10px solid black;
 }
 
 .display {
@@ -51,14 +57,18 @@ body {
     margin: 5px;
     font-size: large;
     color: black;
-    background-color: #5d74ba;
+    background-color: #d3a43f;
     border: none;
+}
+
+.numbers:hover, .operator:hover, #equals:hover, #clear:hover, #backspace:hover, #decimal:hover {
+    scale: 1.07;
 }
 
 .operator {
     font-size: xx-large;
     margin: 5px;
-    background-color: #783fd3;
+    background-color: #d35a3f;
     color: black;
     border: none;
 }
@@ -74,14 +84,14 @@ body {
 }
 
 #clear {
-    background-color: salmon;
+    background-color: #d3c93f;
     margin: 5px;
     border: none;
     font-size: large;
 }
 
 #backspace {
-    background-color: slategrey;
+    background-color: #d3c93f;
     font-size: xx-large;
     margin: 5px;
     color: black;
@@ -92,5 +102,10 @@ body {
     font-size: xx-large;
     margin: 5px;
     border: none;
-    background-color: #5d74ba;
+    background-color: #d3a43f;
+}
+
+footer {
+    margin-top: 60px;
+    font-size: small;
 }
