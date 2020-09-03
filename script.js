@@ -65,7 +65,7 @@ function calculate() {
 
 
 function add(num1, num2) {
-    result = (num1 + num2).toFixed(2);
+    result = (+num1 + +num2).toFixed(2);
     displayResult(result);
     calculationIsDone = true;
     return result;
